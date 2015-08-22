@@ -1,15 +1,29 @@
 <h1>Adicionar Dia de Trabalho ♬</h1>
 <%= form_for :workday do |f| %>
     <p>
-    <%= f.label :day %> <br>
-
+        <%= f.label :day, "Dia" %> <br>
+        <%= f.date_field(:day) %>
+    </p>
+    <p>
+        <%= f.label :arrivaltime, "Hora de chegada" %><br>
+        <%= f.datetime_field(:arrivaltime) %>
     </p>
     <p>
     <%= f.check_box(:lunch) %>
-    <%= f.label(:lunch, "I went eat.") %>
+    <%= f.label(:lunch, "Eu fui comer.") %>
     </p>
     <p>
-    <%= f.submit %>
+        <%= f.label :lunchleave, "Hora de saída pro almoço" %><br>
+        <%= f.datetime_field(:arrivaltime) %>
+    </p>
+    <p>
+        <%= f.label :lunchback, "Hora de volta do almoço" %><br>
+        <%= f.datetime_field(:departuretime) %>
+    </p>
+
+
+    <p>
+    <%= f.submit "Save" %>
     </p>
 <% end %>
 
