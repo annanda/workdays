@@ -9,7 +9,10 @@ class WorkdaysController < ApplicationController
         redirect_to @workday
     end
 
+    def show
+        @workday = Workday.find(params[:id])
     end
+
     private
     def workday_params
         params.require(:workday).permit(:day, :arrivaltime, :lunch, :lunchleave, :lunchback, :departuretime)
