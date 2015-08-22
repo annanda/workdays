@@ -12,11 +12,11 @@
     <%= f.check_box(:lunch) %>
     <%= f.label(:lunch, "Eu fui comer.") %>
     </p>
-    <p>
+    <p class="lunch_time">
         <%= f.label :lunchleave, "Hora de saída pro almoço" %><br>
         <%= f.datetime_field(:arrivaltime) %>
     </p>
-    <p>
+    <p class="lunch_time">
         <%= f.label :lunchback, "Hora de volta do almoço" %><br>
         <%= f.datetime_field(:departuretime) %>
     </p>
