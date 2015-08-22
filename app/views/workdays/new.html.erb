@@ -1,5 +1,5 @@
 <h1>Adicionar Dia de Trabalho ♬</h1>
-<%= form_for :workday do |f| %>
+<%= form_for :workday, url: workdays_path do |f| %>
     <p>
         <%= f.label :day, "Dia" %> <br>
         <%= f.date_field(:day) %>
@@ -24,11 +24,10 @@
         <%= f.label :departuretime, "Hora de saída" %><br>
         <%= f.datetime_field(:departuretime) %>
     </p>
+    <p>Hora estimada de saída</p>
+    <div class="estimatedtime">
 
-    <p>
-        <%= f.label :estimatedtimeleave, "Hora estimada de saída" %><br>
-        <%= f.text_field(:estimatedtimeleave) %>
-    </p>
+    </div>
 
 
     <p>

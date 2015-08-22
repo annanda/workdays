@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 2015-08-21
+  arrivaltime: 2015-08-21 23:13:23
+  lunch: 
+  lunchleave: 2015-08-21 23:13:23
+  lunchback: 2015-08-21 23:13:23
+  departuretime: 2015-08-21 23:13:23
+
+two:
+  day: 2015-08-21
+  arrivaltime: 2015-08-21 23:13:23
+  lunch: 
+  lunchleave: 2015-08-21 23:13:23
+  lunchback: 2015-08-21 23:13:23
+  departuretime: 2015-08-21 23:13:23
