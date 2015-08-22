@@ -14,11 +14,20 @@
     </p>
     <p class="lunch_time">
         <%= f.label :lunchleave, "Hora de saída pro almoço" %><br>
-        <%= f.datetime_field(:arrivaltime) %>
+        <%= f.datetime_field(:lunchleave) %>
     </p>
     <p class="lunch_time">
         <%= f.label :lunchback, "Hora de volta do almoço" %><br>
+        <%= f.datetime_field(:lunchback) %>
+    </p>
+    <p>
+        <%= f.label :departuretime, "Hora de saída" %><br>
         <%= f.datetime_field(:departuretime) %>
+    </p>
+
+    <p>
+        <%= f.label :estimatedtimeleave, "Hora estimada de saída" %><br>
+        <%= f.text_field(:estimatedtimeleave) %>
     </p>
 
 
